@@ -20,7 +20,7 @@ public class Reply extends BaseEntity{
 
     private String replyer;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Board board;//연관관계 지정. 댓글이 게시글을 참조함.
 
 }
